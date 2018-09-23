@@ -14,6 +14,7 @@ public class UsersResource {
     @Autowired
     UsersRepository usersRepository;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping(value = "/all")
     public List<Users> getAll(){
         return usersRepository.findAll();
