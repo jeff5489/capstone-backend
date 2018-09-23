@@ -1,12 +1,17 @@
 spring:
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/capstone?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
-#    username:
-#    password:
-#    url: jdbc:mysql://localhost:3306/test?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
-    username: jeff
-    password: pass
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/capstone?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+#    username: jeff
+#    password: pass
+
+#ClearDB hosting stuff
+
+#    mysql://bb603520e56afc:76b17f43@us-cdbr-iron-east-01.cleardb.net/heroku_3645b0ae2c99ae6?reconnect=true
+    driverClassName: heroku_3645b0ae2c99ae6
+    url: us-cdbr-iron-east-01.cleardb.net
+    username: bb603520e56afc
+    password: 76b17f43
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
