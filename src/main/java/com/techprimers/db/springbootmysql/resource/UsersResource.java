@@ -20,10 +20,25 @@ public class UsersResource {
         return usersRepository.findAll();
     }
 
+//    @GetMapping("/user/{id}")
+//    public Users getUser(@PathVariable Integer id) {
+//        return usersRepository.findOne(id);
+//    }
+
     @PostMapping(value = "/load")
     public List<Users> persist(@RequestBody final Users users){
         usersRepository.save(users);
         return usersRepository.findAll();
     }
+
+//    @DeleteMapping("/user/{id}")
+//    public boolean deleteUser(@PathVariable Integer id) {
+//        usersRepository.delete(id);
+//        return true;
+//    }
+
+
+//    annotation???
+//    public void deleteById(ID id)
 
 }
