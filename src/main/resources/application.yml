@@ -9,8 +9,8 @@ spring:
 
     driverClassName: heroku_3645b0ae2c99ae6
     url: us-cdbr-iron-east-01.cleardb.net
-    username: ${JDBC_TODO_USER}
-    password: ${JDBC_TODO_PASS}
+    username: bb603520e56afc
+    password: 53d949894e22b6d
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
