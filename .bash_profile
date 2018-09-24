@@ -1,0 +1,2 @@
+export JDBC_TODO_USER=<bb603520e56afc>
+export JDBC_TODO_PASS=<53d949894e22b6d>

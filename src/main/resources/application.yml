@@ -1,13 +1,16 @@
 spring:
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/capstone?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
-    username: jeff
-    password: pass
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/capstone?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+#    username: jeff
+#    password: pass
 
 #ClearDB hosting stuff
 
-#
+    driverClassName: heroku_3645b0ae2c99ae6
+    url: us-cdbr-iron-east-01.cleardb.net
+    username: ${JDBC_TODO_USER}
+    password: ${JDBC_TODO_PASS}
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
