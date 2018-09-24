@@ -8,7 +8,7 @@ spring:
 #ClearDB hosting stuff
 
     driverClassName: heroku_3645b0ae2c99ae6
-    url: us-cdbr-iron-east-01.cleardb.net
+    url: ${JDBC_DATABASE_URL}
     username: ${JDBC_TODO_USER}
     password: ${JDBC_TODO_PASS}
   jpa:
