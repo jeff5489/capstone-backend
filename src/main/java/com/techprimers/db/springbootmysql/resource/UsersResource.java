@@ -20,25 +20,24 @@ public class UsersResource {
         return usersRepository.findAll();
     }
 
-//    @GetMapping("/user/{id}")
-//    public Users getUser(@PathVariable Integer id) {
-//        return usersRepository.findOne(id);
-//    }
-
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping(value = "/load")
     public List<Users> persist(@RequestBody final Users users){
         usersRepository.save(users);
         return usersRepository.findAll();
     }
 
-//    @DeleteMapping("/user/{id}")
-//    public boolean deleteUser(@PathVariable Integer id) {
-//        usersRepository.delete(id);
+    @CrossOrigin(origins = "http://localhost:3000")
+    @DeleteMapping("/{id}")
+    public boolean deleteUser(@PathVariable Integer id) {
+        usersRepository.deleteById(id);
+        return true;
+    }
+
+//    @CrossOrigin(origins = "http://localhost:3000")
+//    @DeleteMapping("/{id}")
+//    public boolean updateUser(@PathVariable Integer id) {
+//        usersRepository.
 //        return true;
 //    }
-
-
-//    annotation???
-//    public void deleteById(ID id)
-
 }

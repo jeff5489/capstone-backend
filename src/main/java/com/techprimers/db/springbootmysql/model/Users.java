@@ -12,13 +12,14 @@ public class Users {
     @GeneratedValue
     @Column(name = "id")
     private Integer id;
-
     @Column(name = "title")
     private String title;
-
+    @Column(name = "date")
+    private String date;
+    @Column(name = "imgUrl")
+    private String imgUrl;
     @Column(name = "description")
     private String description;
-
 
 
     public String getTitle() {
@@ -37,13 +38,6 @@ public class Users {
         this.description = description;
     }
 
-    //    @Column(name ="name")
-//    private String name;
-//    @Column(name ="team_name")
-//    private String teamName;
-//    @Column(name ="salary")
-//    private Integer salary;
-
     public Users(){
     }
 
@@ -55,27 +49,19 @@ public class Users {
         this.id = id;
     }
 
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public String getTeamName() {
-//        return teamName;
-//    }
-//
-//    public void setTeamName(String teamName) {
-//        this.teamName = teamName;
-//    }
-//
-//    public Integer getSalary() {
-//        return salary;
-//    }
-//
-//    public void setSalary(Integer salary) {
-//        this.salary = salary;
-//    }
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 }
