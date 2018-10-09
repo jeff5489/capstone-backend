@@ -33,11 +33,4 @@ public class UsersResource {
         usersRepository.deleteById(id);
         return true;
     }
-
-//    @CrossOrigin(origins = "http://localhost:3000")
-//    @DeleteMapping("/{id}")
-//    public boolean updateUser(@PathVariable Integer id) {
-//        usersRepository.
-//        return true;
-//    }
 }
